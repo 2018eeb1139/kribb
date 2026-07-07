@@ -16,7 +16,7 @@ export default function SignUp() {
 
   const { isLoaded, isSignedIn } = useAuth();
 
-  const { router } = useRouter();
+  const  router  = useRouter();
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -44,6 +44,7 @@ export default function SignUp() {
     if (!error) {
       await signUp.verifications.sendEmailCode();
     }
+    
   };
 
   const onVerifyPress = async () => {
