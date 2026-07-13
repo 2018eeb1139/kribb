@@ -6,7 +6,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Profile() {
   const { signOut } = useAuth();
-  const { router } = useRouter();
+  const router = useRouter();
 
   const handleSignOut = async () => {
     try {
