@@ -16,84 +16,74 @@ export default function SignUp() {
 
   const { isLoaded, isSignedIn } = useAuth();
 
-  const router  = useRouter();
+  const router = useRouter();
 
-  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [code,setCode] = useState("")
-
+  const [code, setCode] = useState("");
 
   const isLoading = fetchStatus === "fetching";
 
-
-  const onSignInPress = async()=>{
+  const onSignInPress = async () => {
     const { error } = await signIn.password({
-      emailAddress:email,
+      emailAddress: email,
       password,
-    })
-    if(error){
-      alert(error.message)
+    });
+    if (error) {
+      alert(error.message);
     }
-    if (signIn.status === 'complete') {
+    if (signIn.status === "complete") {
       await signIn.finalize({
         navigate: ({ session, decorateUrl }) => {
           if (session?.currentTask) {
-            console.log(session?.currentTask)
-            return
+            console.log(session?.currentTask);
+            return;
           }
-          const url = decorateUrl('/') 
-          router.push(url as any)
-        
+          const url = decorateUrl("/");
+          router.push(url as any);
         },
-      })
-    } else if (signIn.status === 'needs_second_factor') {
-      await signIn.mfa.sendPhoneCode()
-    } else if (signIn.status === 'needs_client_trust') {
-
+      });
+    } else if (signIn.status === "needs_second_factor") {
+      await signIn.mfa.sendPhoneCode();
+    } else if (signIn.status === "needs_client_trust") {
       const emailCodeFactor = signIn.supportedSecondFactors.find(
-        (factor) => factor.strategy === 'email_code',
-      )
+        (factor) => factor.strategy === "email_code",
+      );
 
       if (emailCodeFactor) {
-        await signIn.mfa.sendEmailCode()
+        await signIn.mfa.sendEmailCode();
       }
     } else {
       // console.error('Sign-in attempt not complete:', signIn)
     }
-  }
+  };
 
   const onVerifyPress = async () => {
-    await signIn.mfa.verifyEmailCode({ code })
+    await signIn.mfa.verifyEmailCode({ code });
 
-    if (signIn.status === 'complete') {
+    if (signIn.status === "complete") {
       await signIn.finalize({
         navigate: ({ session, decorateUrl }) => {
-         
           if (session?.currentTask) {
-            console.log(session?.currentTask)
-            return
+            console.log(session?.currentTask);
+            return;
           }
-          const url = decorateUrl('/')
-          router.push(url as any)
-         
+          const url = decorateUrl("/");
+          router.push(url as any);
         },
-      })
+      });
     } else {
       // Check why the sign-in is not complete
       // console.error('Sign-in attempt not complete:', signIn)
     }
-  }
+  };
 
-
-  if (
-    signIn.status === 'needs_client_trust')
-   {
+  if (signIn.status === "needs_client_trust") {
     return (
       <View className="flex-1 justify-center px-6 py-12">
         <Image
-          source={require("../../assets/images/react-logo.png")}
-          className="mb-8 mx-auto"
+          source={require("../../assets/images/kribb.png")}
+          style={{ width: 90, height: 36 }}
           resizeMode="contain"
         />
         <Text className="text-3xl text-center font-bold text-gray-800 mb-2">
@@ -150,8 +140,8 @@ export default function SignUp() {
     >
       <View className="flex-1 justify-center px-6 py-12">
         <Image
-          source={require("../../assets/images/react-logo.png")}
-          className="mb-8 mx-auto"
+          source={require("../../assets/images/kribb.png")}
+          style={{ width: 90, height: 36 }}
           resizeMode="contain"
         />
         <Text className="text-3xl text-center font-bold text-gray-800 mb-2">
@@ -160,7 +150,7 @@ export default function SignUp() {
         <Text className="text-gray-500 text-center mb-8">
           Sign In to your account
         </Text>
-      
+
         <TextInput
           className="w-full border border-gray-300 rounded-xl px-4 py-3 mb-4 "
           placeholder="Email address"

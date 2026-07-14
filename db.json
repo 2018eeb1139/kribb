@@ -1,0 +1,557 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "john@example.com",
+      "first_name": "John",
+      "last_name": "Doe",
+      "avatar_url": "https://i.pravatar.cc/150?img=1",
+      "is_admin": false,
+      "created_at": "2026-07-14T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "email": "admin@example.com",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "avatar_url": "https://i.pravatar.cc/150?img=5",
+      "is_admin": true,
+      "created_at": "2026-07-14T10:05:00Z"
+    }
+  ],
+  "properties": [
+    {
+      "id": 1,
+      "title": "Modern Apartment in Downtown",
+      "description": "A spacious 2-bedroom apartment with city views.",
+      "price": 85000,
+      "type": "Apartment",
+      "area_sqft": 1200,
+      "address": "12 MG Road",
+      "city": "Bengaluru",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "latitude": 12.9716,
+      "longitude": 77.5946,
+      "images": [
+        "https://picsum.photos/400/300?random=1",
+        "https://picsum.photos/400/300?random=2"
+      ],
+      "is_featured": true,
+      "is_sold": false,
+      "created_at": "2026-07-14T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "title": "Luxury Villa",
+      "description": "Premium villa with private garden.",
+      "price": 250000,
+      "type": "Villa",
+      "area_sqft": 3500,
+      "address": "45 Palm Street",
+      "city": "Hyderabad",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "latitude": 17.385,
+      "longitude": 78.4867,
+      "images": [
+        "https://picsum.photos/400/300?random=3",
+        "https://picsum.photos/400/300?random=4"
+      ],
+      "is_featured": true,
+      "is_sold": false,
+      "created_at": "2026-07-13T09:00:00Z"
+    },
+    {
+      "id": 3,
+      "title": "Cozy Studio",
+      "description": "Perfect for students and professionals.",
+      "price": 35000,
+      "type": "Studio",
+      "area_sqft": 500,
+      "address": "89 Lake View",
+      "city": "Pune",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "latitude": 18.5204,
+      "longitude": 73.8567,
+      "images": [
+        "https://picsum.photos/400/300?random=5",
+        "https://picsum.photos/400/300?random=6"
+      ],
+      "is_featured": false,
+      "is_sold": false,
+      "created_at": "2026-07-12T11:00:00Z"
+    },
+    {
+      "id": 4,
+      "title": "Family House",
+      "description": "Comfortable home in a quiet neighborhood.",
+      "price": 120000,
+      "type": "House",
+      "area_sqft": 2200,
+      "address": "22 Green Park",
+      "city": "Delhi",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "latitude": 28.6139,
+      "longitude": 77.209,
+      "images": [
+        "https://picsum.photos/400/300?random=7",
+        "https://picsum.photos/400/300?random=8"
+      ],
+      "is_featured": false,
+      "is_sold": true,
+      "created_at": "2026-07-11T10:30:00Z"
+    },
+    {
+      "id": 5,
+      "title": "Beachside Villa",
+      "description": "Beautiful villa near the beach.",
+      "price": 310000,
+      "type": "Villa",
+      "area_sqft": 4200,
+      "address": "10 Beach Road",
+      "city": "Goa",
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "latitude": 15.2993,
+      "longitude": 74.124,
+      "images": [
+        "https://picsum.photos/400/300?random=9",
+        "https://picsum.photos/400/300?random=10"
+      ],
+      "is_featured": true,
+      "is_sold": false,
+      "created_at": "2026-07-10T08:00:00Z"
+    },
+    {
+      "id": 6,
+      "title": "Compact Apartment",
+      "description": "Affordable apartment for small families.",
+      "price": 60000,
+      "type": "Apartment",
+      "area_sqft": 900,
+      "address": "14 Central Avenue",
+      "city": "Chennai",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "latitude": 13.0827,
+      "longitude": 80.2707,
+      "images": [
+        "https://picsum.photos/400/300?random=11",
+        "https://picsum.photos/400/300?random=12"
+      ],
+      "is_featured": false,
+      "is_sold": false,
+      "created_at": "2026-07-09T09:00:00Z"
+    },
+    {
+      "id": 7,
+      "title": "Luxury Penthouse",
+      "description": "Top-floor penthouse with skyline views.",
+      "price": 450000,
+      "type": "Penthouse",
+      "area_sqft": 5000,
+      "address": "Skyline Towers",
+      "city": "Mumbai",
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "latitude": 19.076,
+      "longitude": 72.8777,
+      "images": [
+        "https://picsum.photos/400/300?random=13",
+        "https://picsum.photos/400/300?random=14"
+      ],
+      "is_featured": true,
+      "is_sold": false,
+      "created_at": "2026-07-08T09:30:00Z"
+    },
+    {
+      "id": 8,
+      "title": "Suburban Home",
+      "description": "Ideal family home with backyard.",
+      "price": 140000,
+      "type": "House",
+      "area_sqft": 2400,
+      "address": "15 Rose Garden",
+      "city": "Ahmedabad",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "latitude": 23.0225,
+      "longitude": 72.5714,
+      "images": [
+        "https://picsum.photos/400/300?random=15",
+        "https://picsum.photos/400/300?random=16"
+      ],
+      "is_featured": false,
+      "is_sold": false,
+      "created_at": "2026-07-07T10:00:00Z"
+    },
+    {
+      "id": 9,
+      "title": "Lake View Apartment",
+      "description": "Apartment overlooking the lake.",
+      "price": 98000,
+      "type": "Apartment",
+      "area_sqft": 1350,
+      "address": "88 Lake Road",
+      "city": "Udaipur",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "latitude": 24.5854,
+      "longitude": 73.7125,
+      "images": [
+        "https://picsum.photos/400/300?random=17",
+        "https://picsum.photos/400/300?random=18"
+      ],
+      "is_featured": true,
+      "is_sold": false,
+      "created_at": "2026-07-06T10:30:00Z"
+    },
+    {
+      "id": 10,
+      "title": "Budget Studio",
+      "description": "Affordable studio apartment.",
+      "price": 28000,
+      "type": "Studio",
+      "area_sqft": 450,
+      "address": "7 College Road",
+      "city": "Jaipur",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "latitude": 26.9124,
+      "longitude": 75.7873,
+      "images": [
+        "https://picsum.photos/400/300?random=19",
+        "https://picsum.photos/400/300?random=20"
+      ],
+      "is_featured": false,
+      "is_sold": false,
+      "created_at": "2026-07-05T11:00:00Z"
+    },
+    {
+      "id": 11,
+      "title": "Garden Villa",
+      "description": "Villa with landscaped gardens.",
+      "price": 270000,
+      "type": "Villa",
+      "area_sqft": 3900,
+      "address": "21 Garden Lane",
+      "city": "Kochi",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "latitude": 9.9312,
+      "longitude": 76.2673,
+      "images": [
+        "https://picsum.photos/400/300?random=21",
+        "https://picsum.photos/400/300?random=22"
+      ],
+      "is_featured": true,
+      "is_sold": false,
+      "created_at": "2026-07-04T09:15:00Z"
+    },
+    {
+      "id": 12,
+      "title": "Modern Duplex",
+      "description": "Stylish duplex with open terrace.",
+      "price": 180000,
+      "type": "Duplex",
+      "area_sqft": 2600,
+      "address": "4 Elite Colony",
+      "city": "Lucknow",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "latitude": 26.8467,
+      "longitude": 80.9462,
+      "images": [
+        "https://picsum.photos/400/300?random=23",
+        "https://picsum.photos/400/300?random=24"
+      ],
+      "is_featured": false,
+      "is_sold": true,
+      "created_at": "2026-07-03T09:45:00Z"
+    },
+    {
+      "id": 13,
+      "title": "Riverside Cottage",
+      "description": "Peaceful cottage near the river.",
+      "price": 95000,
+      "type": "Cottage",
+      "area_sqft": 1500,
+      "address": "River Bank",
+      "city": "Rishikesh",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "latitude": 30.0869,
+      "longitude": 78.2676,
+      "images": [
+        "https://picsum.photos/400/300?random=25",
+        "https://picsum.photos/400/300?random=26"
+      ],
+      "is_featured": false,
+      "is_sold": false,
+      "created_at": "2026-07-02T10:20:00Z"
+    },
+    {
+      "id": 14,
+      "title": "Urban Loft",
+      "description": "Contemporary loft in city center.",
+      "price": 110000,
+      "type": "Loft",
+      "area_sqft": 1450,
+      "address": "Downtown Plaza",
+      "city": "Chandigarh",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "latitude": 30.7333,
+      "longitude": 76.7794,
+      "images": [
+        "https://picsum.photos/400/300?random=27",
+        "https://picsum.photos/400/300?random=28"
+      ],
+      "is_featured": true,
+      "is_sold": false,
+      "created_at": "2026-07-01T09:00:00Z"
+    },
+    {
+      "id": 15,
+      "title": "Classic Bungalow",
+      "description": "Large bungalow with parking.",
+      "price": 200000,
+      "type": "Bungalow",
+      "area_sqft": 3200,
+      "address": "Old Town",
+      "city": "Indore",
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "latitude": 22.7196,
+      "longitude": 75.8577,
+      "images": [
+        "https://picsum.photos/400/300?random=29",
+        "https://picsum.photos/400/300?random=30"
+      ],
+      "is_featured": false,
+      "is_sold": false,
+      "created_at": "2026-06-30T08:00:00Z"
+    },
+    {
+      "id": 16,
+      "title": "Eco Friendly Home",
+      "description": "Solar-powered smart home.",
+      "price": 170000,
+      "type": "House",
+      "area_sqft": 2500,
+      "address": "Green Valley",
+      "city": "Mysuru",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "latitude": 12.2958,
+      "longitude": 76.6394,
+      "images": [
+        "https://picsum.photos/400/300?random=31",
+        "https://picsum.photos/400/300?random=32"
+      ],
+      "is_featured": true,
+      "is_sold": false,
+      "created_at": "2026-06-29T09:00:00Z"
+    },
+    {
+      "id": 17,
+      "title": "Mountain Cabin",
+      "description": "Cabin with scenic mountain views.",
+      "price": 130000,
+      "type": "Cabin",
+      "area_sqft": 1800,
+      "address": "Hill Top",
+      "city": "Shimla",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "latitude": 31.1048,
+      "longitude": 77.1734,
+      "images": [
+        "https://picsum.photos/400/300?random=33",
+        "https://picsum.photos/400/300?random=34"
+      ],
+      "is_featured": false,
+      "is_sold": false,
+      "created_at": "2026-06-28T09:00:00Z"
+    },
+    {
+      "id": 18,
+      "title": "City Condo",
+      "description": "Condo near business district.",
+      "price": 99000,
+      "type": "Condo",
+      "area_sqft": 1100,
+      "address": "Business Hub",
+      "city": "Noida",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "latitude": 28.5355,
+      "longitude": 77.391,
+      "images": [
+        "https://picsum.photos/400/300?random=35",
+        "https://picsum.photos/400/300?random=36"
+      ],
+      "is_featured": false,
+      "is_sold": true,
+      "created_at": "2026-06-27T10:00:00Z"
+    },
+    {
+      "id": 19,
+      "title": "Premium Farm House",
+      "description": "Luxury farmhouse with pool.",
+      "price": 500000,
+      "type": "Farm House",
+      "area_sqft": 6500,
+      "address": "Village Road",
+      "city": "Nashik",
+      "bedrooms": 6,
+      "bathrooms": 6,
+      "latitude": 19.9975,
+      "longitude": 73.7898,
+      "images": [
+        "https://picsum.photos/400/300?random=37",
+        "https://picsum.photos/400/300?random=38"
+      ],
+      "is_featured": true,
+      "is_sold": false,
+      "created_at": "2026-06-26T09:00:00Z"
+    },
+    {
+      "id": 20,
+      "title": "Affordable Flat",
+      "description": "Ideal starter home.",
+      "price": 55000,
+      "type": "Apartment",
+      "area_sqft": 850,
+      "address": "Sunrise Apartments",
+      "city": "Surat",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "latitude": 21.1702,
+      "longitude": 72.8311,
+      "images": [
+        "https://picsum.photos/400/300?random=39",
+        "https://picsum.photos/400/300?random=40"
+      ],
+      "is_featured": false,
+      "is_sold": false,
+      "created_at": "2026-06-25T08:30:00Z"
+    },
+    {
+      "id": 21,
+      "title": "Luxury Condo",
+      "description": "Elegant condo with premium amenities.",
+      "price": 210000,
+      "type": "Condo",
+      "area_sqft": 2800,
+      "address": "Royal Residency",
+      "city": "Gurugram",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "latitude": 28.4595,
+      "longitude": 77.0266,
+      "images": [
+        "https://picsum.photos/400/300?random=41",
+        "https://picsum.photos/400/300?random=42"
+      ],
+      "is_featured": true,
+      "is_sold": false,
+      "created_at": "2026-06-24T08:00:00Z"
+    },
+    {
+      "id": 22,
+      "title": "Small Family House",
+      "description": "Comfortable home in residential area.",
+      "price": 95000,
+      "type": "House",
+      "area_sqft": 1700,
+      "address": "Maple Street",
+      "city": "Nagpur",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "latitude": 21.1458,
+      "longitude": 79.0882,
+      "images": [
+        "https://picsum.photos/400/300?random=43",
+        "https://picsum.photos/400/300?random=44"
+      ],
+      "is_featured": false,
+      "is_sold": false,
+      "created_at": "2026-06-23T09:30:00Z"
+    },
+    {
+      "id": 23,
+      "title": "Modern Studio",
+      "description": "Minimalist studio in city center.",
+      "price": 42000,
+      "type": "Studio",
+      "area_sqft": 600,
+      "address": "Metro Avenue",
+      "city": "Bhopal",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "latitude": 23.2599,
+      "longitude": 77.4126,
+      "images": [
+        "https://picsum.photos/400/300?random=45",
+        "https://picsum.photos/400/300?random=46"
+      ],
+      "is_featured": false,
+      "is_sold": false,
+      "created_at": "2026-06-22T10:00:00Z"
+    },
+    {
+      "id": 24,
+      "title": "Executive Villa",
+      "description": "High-end villa with smart home features.",
+      "price": 380000,
+      "type": "Villa",
+      "area_sqft": 4700,
+      "address": "Elite Enclave",
+      "city": "Visakhapatnam",
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "latitude": 17.6868,
+      "longitude": 83.2185,
+      "images": [
+        "https://picsum.photos/400/300?random=47",
+        "https://picsum.photos/400/300?random=48"
+      ],
+      "is_featured": true,
+      "is_sold": false,
+      "created_at": "2026-06-21T09:00:00Z"
+    },
+    {
+      "id": 25,
+      "title": "Townhouse",
+      "description": "Modern townhouse in a gated community.",
+      "price": 160000,
+      "type": "Townhouse",
+      "area_sqft": 2100,
+      "address": "Silver Oaks",
+      "city": "Coimbatore",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "latitude": 11.0168,
+      "longitude": 76.9558,
+      "images": [
+        "https://picsum.photos/400/300?random=49",
+        "https://picsum.photos/400/300?random=50"
+      ],
+      "is_featured": false,
+      "is_sold": false,
+      "created_at": "2026-06-20T08:30:00Z"
+    }
+  ],
+  "saved_properties": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "created_at": "",
+      "property_id": 1
+    }
+  ]
+}

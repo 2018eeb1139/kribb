@@ -16,7 +16,7 @@ export default function SignUp() {
 
   const { isLoaded, isSignedIn } = useAuth();
 
-  const  router  = useRouter();
+  const router = useRouter();
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -44,7 +44,6 @@ export default function SignUp() {
     if (!error) {
       await signUp.verifications.sendEmailCode();
     }
-    
   };
 
   const onVerifyPress = async () => {
@@ -69,8 +68,8 @@ export default function SignUp() {
     return (
       <View className="flex-1 justify-center px-6 py-12">
         <Image
-          source={require("../../assets/images/react-logo.png")}
-          className="mb-8 mx-auto"
+          source={require("../../assets/images/kribb.png")}
+          style={{ width: 90, height: 36 }}
           resizeMode="contain"
         />
         <Text className="text-3xl text-center font-bold text-gray-800 mb-2">
@@ -127,8 +126,8 @@ export default function SignUp() {
     >
       <View className="flex-1 justify-center px-6 py-12">
         <Image
-          source={require("../../assets/images/react-logo.png")}
-          className="mb-8 mx-auto"
+          source={require("../../assets/images/kribb.png")}
+          style={{ width: 90, height: 36 }}
           resizeMode="contain"
         />
         <Text className="text-3xl text-center font-bold text-gray-800 mb-2">
