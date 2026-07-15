@@ -9,3 +9,8 @@ export const formatPrice = (value: number): string => {
   }
   return `₹${value.toLocaleString()}`;
 };
+
+export const capitalize = (str: string): string => {
+  if (!str) return ""; // Handle empty strings safely
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};
