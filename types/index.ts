@@ -29,7 +29,6 @@ export interface Property {
 
 export interface SavedProperty {
   id: string;
-  user_id: string;
   property_id: string;
-  created_at: string;
+  properties: Property;
 }

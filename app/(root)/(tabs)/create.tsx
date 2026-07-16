@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Create() {
   return (
-    <SafeAreaView>
+    <SafeAreaView className="flex-1 bg-gray-50">
       <View>
         <Text>Create Screen</Text>
       </View>
